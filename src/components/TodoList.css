@@ -59,3 +59,34 @@
     color: #6b7280;
   }
   
+  .todo-filter-sort-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .todo-filter, .todo-sort {
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: white;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  .todo-filter:hover, .todo-sort:hover {
+    background: #f4f4f4;
+  }
+  
+  .todo-filter:focus, .todo-sort:focus {
+    outline: none;
+    border-color: #007bff;
+  }
+  
+  element.style {
+    /* border-top-width: 5px; */
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }

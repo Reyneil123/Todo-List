@@ -68,6 +68,28 @@
   .todo-due-date {
     margin-top: 8px;
     font-size: 0.9rem;
-    color: #1815e4;
+    color: #8787af;
   }
   
+  
+  .overdue {
+    border-left: 4px solid red;
+    background-color: #ffe5e5;
+  }
+  
+  .overdue-warning {
+    color: red;
+    font-weight: bold;
+  }
+  
+/* Add a slight background change while dragging */
+.todo-item.dragging {
+  background: #713a91; /* Yellow highlight */
+  transform: scale(1.05);
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Add a smooth reordering animation */
+.todo-container .sortable-transition {
+  transition: transform 0.3s ease-in-out;
+}
