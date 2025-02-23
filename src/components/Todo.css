@@ -1,95 +1,101 @@
+
 /* Todo.css */
 
 .todo-item {
-    display: flex;
-    flex-direction: column;
-    background: white (250, 248, 248);
-    padding: 12px;
-    border-radius: 8px;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-    border-left: 4px solid;
-    margin-bottom: 8px;
-  }
-  
-  .todo-item.completed {
-    border-left-color: #10b981;
-    opacity: 0.6;
-  }
-  
-  .todo-item.incomplete {
-    border-left-color: #ef4444;
-  }
-  
-  .todo-main {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .todo-left {
-    display: flex;
-    align-items: center;
-  }
-  
-  .todo-checkbox {
-    transform: scale(1.3);
-    margin-right: 8px;
-    accent-color: #3b82f6;
-  }
-  
-  .todo-text {
-    font-size: 1rem;
-  }
-  
-  .todo-text.completed {
-    text-decoration: line-through;
-    color: #1b111a;
-  }
-  
-  .todo-actions button {
-    margin-left: 8px;
-    font-size: 1.2rem;
-    cursor: pointer;
-    transition: color 0.2s;
-  }
-  
-  .todo-actions .edit-btn {
-    color: #3b82f6;
-  }
-  
-  .todo-actions .delete-btn {
-    color: #ef4444;
-  }
-  
-  .todo-actions .save-btn {
-    color: #10b981;
-  }
-  
-  .todo-due-date {
-    margin-top: 8px;
-    font-size: 0.9rem;
-    color: #8787af;
-  }
-  
-  
-  .overdue {
-    border-left: 4px solid red;
-    background-color: #ffe5e5;
-  }
-  
-  .overdue-warning {
-    color: red;
-    font-weight: bold;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  background: white (250, 248, 248);
+  padding: 12px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  border-left: 4px solid;
+  margin-bottom: 8px;
+}
+
+.todo-item.completed {
+  border-left-color: #10b981;
+  opacity: 0.6;
+}
+
+.todo-item.incomplete {
+  border-left-color: #ef4444;
+}
+
+.todo-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.todo-left {
+  display: flex;
+  align-items: center;
+}
+
+.todo-checkbox {
+  transform: scale(1.3);
+  margin-right: 8px;
+  accent-color: #3b82f6;
+}
+
+.todo-text {
+  font-size: 1rem;
+}
+
+.todo-text.completed {
+  text-decoration: line-through;
+  color: #1b111a;
+}
+
+.todo-actions button {
+  margin-left: 8px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.todo-actions .edit-btn {
+  color: #3b82f6;
+}
+
+.todo-actions .delete-btn {
+  color: #ef4444;
+}
+
+.todo-actions .save-btn {
+  color: #10b981;
+}
+
+.todo-due-date {
+  margin-top: 8px;
+  font-size: 0.9rem;
+  color: #8787af;
+}
+
+
+.overdue {
+  border-left: 4px solid red;
+  background-color: #ffe5e5;
+}
+
+.overdue-warning {
+  color: red;
+  font-weight: bold;
+}
+
 /* Add a slight background change while dragging */
 .todo-item.dragging {
-  background: #713a91; /* Yellow highlight */
-  transform: scale(1.05);
-  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+background: #713a91; /* Yellow highlight */
+transform: scale(1.05);
+box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 /* Add a smooth reordering animation */
 .todo-container .sortable-transition {
-  transition: transform 0.3s ease-in-out;
+transition: transform 0.3s ease-in-out;
+}
+
+element.style {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }

@@ -21,13 +21,22 @@ const TodoList: React.FC = () => {
   const [filter, setFilter] = useState("all");
   const [sortOrder, setSortOrder] = useState("default");
 
+  const [dateError, setDateError] = useState(false);
+  
   const handleAddTodo = () => {
-    if (newTodo.trim() !== "") {
-      dispatch(addTodo({ text: newTodo, completed: false, dueDate: newDueDate }));
-      setNewTodo("");
-      setNewDueDate("");
+    if (newTodo.trim() === "") return;
+    if (newDueDate.trim() === "") {
+      setDateError(true);
+      alert("Please select a date!");
+      return;
     }
+  
+    dispatch(addTodo({ text: newTodo, completed: false, dueDate: newDueDate }));
+    setNewTodo("");
+    setNewDueDate("");
+    setDateError(false);
   };
+  
 
   const handleToggleTodo = (id: string) => {
     dispatch(toggleTodo(id));
@@ -94,11 +103,15 @@ const TodoList: React.FC = () => {
           className="todo-input"
         />
         <input
-          type="date"
-          value={newDueDate}
-          onChange={(e) => setNewDueDate(e.target.value)}
-          className="todo-date-input"
+        type="date"
+        value={newDueDate}
+        onChange={(e) => {
+            setNewDueDate(e.target.value);
+            setDateError(false); // Reset error when user selects a date
+        }}
+        className={`todo-date-input ${dateError ? "error" : ""}`}
         />
+
         <button onClick={handleAddTodo} className="add-btn">
           Add
         </button>
