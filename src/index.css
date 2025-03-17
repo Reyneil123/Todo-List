@@ -1,0 +1,318 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f6f8;
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2rem;
+}
+
+.container {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 100%;
+}
+
+h1 {
+  text-align: center;
+  text-size-adjust: 5;
+  margin-bottom: 1.5rem;
+  color: #2b2d42;
+}
+
+.input-group {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.input-group input {
+  flex: 1;
+  padding: 0.5rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px 0 0 8px;
+  font-size: 1rem;
+}
+
+.input-group button {
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #3f51b5;
+  color: white;
+  font-weight: bold;
+  border-radius: 0 8px 8px 0;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.input-group button:hover {
+  background-color: #303f9f;
+}
+
+ul {
+  list-style-type: none;
+  margin-top: 1rem;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f1f3f5;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+}
+
+li span {
+  cursor: pointer;
+}
+
+li span.completed {
+  text-decoration: line-through;
+  color: #999;
+}
+
+li button {
+  background-color: transparent;
+  border: none;
+  color: #e53935;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+li button:hover {
+  color: #b71c1c;
+}
+
+button {
+  margin-right: 0.5rem;
+  padding: 0.3rem 0.8rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background-color: #f1f3f5;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: #e0e0e0;
+}
+
+button.active {
+  background-color: #3f51b5;
+  color: white;
+  border: 1px solid #3f51b5;
+}
+
+input[type="checkbox"] {
+  margin-right: 0.5rem;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+.container {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: "Segoe UI", sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.input-group {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.input-group input[type="text"],
+.input-group input[type="date"],
+.input-group input[type="time"] {
+  flex: 1;
+  padding: 0.5rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.input-group button {
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #4caf50;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.input-group button:hover {
+  background-color: #45a049;
+}
+
+button.active {
+  background-color: #2196f3;
+  color: white;
+}
+
+button:not(.active) {
+  background-color: #e0e0e0;
+  color: #333;
+}
+
+button:not(.active):hover {
+  background-color: #ccc;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 0.75rem;
+  margin-bottom: 0.5rem;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  justify-content: space-between;
+}
+
+li span {
+  flex: 1;
+}
+
+li input[type="checkbox"] {
+  transform: scale(1.2);
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #888;
+}
+
+small {
+  color: #666;
+  font-size: 0.85rem;
+}
+
+@media (max-width: 500px) {
+  .input-group {
+    flex-direction: column;
+  }
+
+  .input-group input,
+  .input-group button {
+    width: 100%;
+  }
+}
+.container {
+  max-width: 500px;
+  margin: auto;
+  padding: 1rem;
+  background: #f9f9f9;
+  border-radius: 8px;
+}
+
+.input-group {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.input-group input[type="text"],
+.input-group input[type="date"] {
+  flex: 1;
+  padding: 0.5rem;
+}
+
+.input-group button {
+  padding: 0.5rem 1rem;
+  background: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.input-group button:hover {
+  background: #0056b3;
+}
+
+.filter-group {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.filter-group button {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  background: white;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.filter-group .active {
+  background: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.task-item span.completed {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.task-item button {
+  margin-left: 1rem;
+  background: #ffc107;
+  border: none;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.task-item button:hover {
+  background: #e0a800;
+}
